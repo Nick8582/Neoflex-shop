@@ -1,0 +1,155 @@
+.footer {
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white-color;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    @media (max-width: $table-m) {
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__logo {
+    color: $black-color;
+    font-weight: 700;
+    font-size: 25px;
+    margin-right: 60px;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0 15px;
+    margin-right: 15px;
+  }
+
+  &__lang {
+    display: flex;
+
+    &-img {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: 16px;
+    }
+
+    &-list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    &-lang {
+      border: none;
+      background: none;
+      padding: 0;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-right: 15px;
+      cursor: pointer;
+      transition: color $transition;
+
+      &:hover {
+        color: $yellow-2-color;
+      }
+
+      &.active {
+        font-weight: 700;
+        color: $yellow-color;
+      }
+    }
+  }
+
+  &__nav {
+    padding: 8px 0;
+    margin-right: 5px;
+    @media (max-width: $table-m) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__link {
+    color: $black-color;
+    letter-spacing: 0.5px;
+    transition: color $transition;
+
+    &:hover {
+      color: $yellow-2-color;
+    }
+
+    &:active {
+      color: $yellow-color;
+    }
+  }
+
+  &__about {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 0;
+    color: $black-color;
+    transition: color $transition;
+
+    &:hover {
+      color: $yellow-2-color;
+    }
+
+    &:active {
+      color: $yellow-color;
+    }
+  }
+
+  &__social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    &-img {
+      display: block;
+      width: 30px;
+      height: 30px;
+      fill: $black-color;
+      color: $black-color;
+      transition: color $transition, fill $transition;
+
+      &:hover {
+        fill: $yellow-color;
+        color: $yellow-color;
+      }
+
+      &:active {
+        fill: $yellow-2-color;
+        color: $yellow-2-color;
+      }
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 17px;
+      }
+    }
+  }
+}
