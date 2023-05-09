@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>QPICK | Корзина</title>
+    <script src="app.js" defer="defer"></script>
+    <link href="styles/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container"><a class="header__logo" href="/">QPICK</a>
+        <ul class="header__btns-list">
+          <li class="header__btn-item"><a class="header__btn" href="#">
+              <svg class="header__icon">
+                <use xlink:href="images/sprite.svg#heart"></use>
+              </svg><span class="header__heart-sum header__icon-sum">2</span></a></li>
+          <li class="header__btn-item"><a class="header__btn" href="cart.html">
+              <svg class="header__icon">
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg><span class="header__cart-sum header__icon-sum">0</span></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="cart">
+      <div class="container">
+        <h2 class="cart__title">Корзина</h2>
+      </div>
+      <div class="container cart__container">
+        <ul class="cart__left"></ul>
+        <form class="cart__right" method="POST">
+          <div class="cart__result"><span class="cart__result-text">ИТОГО</span><span class="cart__result-sum"></span></div>
+          <button class="cart__submit">Перейти к оформлению</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer container">
+      <div class="footer__container"><a class="footer__logo" href="index.html">QPICK</a>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Избранное</a></li>
+            <li class="footer__item"><a class="footer__link" href="cart.html">Корзина</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__options"><a class="footer__about" href="#">Условия сервиса</a>
+          <div class="footer__lang">
+            <svg class="footer__lang-img">
+              <use xlink:href="images/sprite.svg#lang"></use>
+            </svg>
+            <ul class="footer__lang-list">
+              <li class="footer__lang-item">
+                <button class="footer__btn-lang active">Рус</button>
+              </li>
+              <li class="footer__lang-item">
+                <button class="footer__btn-lang">Eng</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="footer__social">
+          <li class="footer__social-item"><a class="footer__social-link" href="#">
+              <svg class="footer__social-img">
+                <use xlink:href="images/sprite.svg#VK"></use>
+              </svg></a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#">
+              <svg class="footer__social-img">
+                <use xlink:href="images/sprite.svg#Telegram"></use>
+              </svg></a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#">
+              <svg class="footer__social-img">
+                <use xlink:href="images/sprite.svg#Whatsapp"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
